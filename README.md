@@ -31,11 +31,14 @@ npm install
 make
 
 # or
+
+npm install https://github.com/pnoulis/permute.git
+
+# If you are getting errors try installing esbuild globally
+# then re-install
 npm install -g esbuild
 # esbuild is a transpiler. In this case, it produces the library
 # in esm and cjs format.
-
-npm install https://github.com/pnoulis/permute.git
 
 ```
 
