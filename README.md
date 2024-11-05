@@ -1,22 +1,41 @@
 # About
 
+**permute**
+
+*produce permutations*
+
 ## Getting started
 ### Prerequisites
 
-- node >= 22.11.0
+- make
 
-- git
+```sh
+sudo apt install make
+```
+
+- node
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install latest
+# check node is installed
+node --version
+```
 
 ### Installation
 
 ```sh
-
-git clone git@github.com:pnoulis/permute.git
+git clone https://github.com/pnoulis/permute.git
 npm install
+make
 
 # or
+npm install -g esbuild
+# esbuild is a transpiler. In this case, it produces the library
+# in esm and cjs format.
 
-npm install git@github.com:pnoulis/permute.git
+npm install https://github.com/pnoulis/permute.git
 
 ```
 

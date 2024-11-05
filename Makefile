@@ -10,10 +10,10 @@ all: build
 build: dist/permute.mjs dist/permute.cjs
 
 dist/permute.mjs: src/*.js | dist
-	npx esbuild src/index.js --bundle --format=esm $(esbuildflags) --outfile=./dist/permute.mjs
+	npx esbuild src/permute.js --bundle --format=esm $(esbuildflags) --outfile=./dist/permute.mjs
 
 dist/permute.cjs: src/*.js | dist
-	npx esbuild src/index.js --bundle --format=cjs $(esbuildflags) --outfile=./dist/permute.cjs
+	npx esbuild src/permute.js --bundle --format=cjs $(esbuildflags) --outfile=./dist/permute.cjs
 
 dist:
 	mkdir dist
