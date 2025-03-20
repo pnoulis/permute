@@ -15,8 +15,8 @@
   "author": "pavlos noulis <pavlos.noulis@gmail.com> (https://github.com/pnoulis)",
   "type": "module",
   "engines": {
-    "npm": "",
-    "node": ""
+    "npm": "10.9.2",
+    "node": "22.14.0"
   },
   "exports": {
     ".": {
@@ -28,6 +28,6 @@
     "install": "make"
   },
   "devDependencies": {
-    "esbuild": "0.24.0"
+    "esbuild": "0.25.1"
   }
 }
